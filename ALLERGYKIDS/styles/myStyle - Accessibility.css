@@ -1,0 +1,1372 @@
+﻿/*------------------הטמעה של פונטים---------------------------*/
+@font-face {
+    font-family: 'Rubik-Light';
+    src: url('../Fonts/Rubik-Light.eot') format('embedded-opentype');
+    src:url('../Fonts/Rubik-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Rubik-Black';
+    src: url('../Fonts/Rubik-Black.eot') format('embedded-opentype');
+    src: url('../Fonts/Rubik-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik-Medium';
+    src: url('../Fonts/Rubik-Medium.eot') format('embedded-opentype');
+    src: url('../Fonts/Rubik-Medium.ttf') format('truetype');
+}
+
+body {
+    direction: rtl;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+header {
+    position: fixed; /*על מנת שהתפריט יהיה קבוע ולא ייעלם בעת גלילה*/
+    background-color: white; /*רקע לבן לתפריט הראשי*/
+    width: 1280px;
+    height: 70px;
+    z-index: 1;                        /*מי שיותר גבוה בהיררכיה הוא מעל כולם, משמע התפריט מעל אלמנטים אחרים*/                  
+}
+
+.notActive{               /*מיועד לקישורים לא לחיצים- ללא צבע אפור כי זה לתפריט הראשי*/
+    cursor:not-allowed;
+}
+
+#Logo {                                          /*תמונת לוגו*/
+    padding-top: 13px;                                  /*מרחק הלוגו מחלקו העליון של הדף*/
+    padding-right: 12px;                                                   /*מרחק הלוגו  מצידו הימני של הדף*/
+    width: 140px;                                                  /*רוחב הלוגו*/
+}
+
+#Accessibility_button {
+    width: 100px;
+    height: 100px;
+    margin-top: -30px;
+    padding-right: 150px;
+}
+
+header ul {
+    list-style: none; /*העלמת התבליטים בתפריט הניווט הראשי*/
+    margin-top: -50px; /*מרחק התפריט הראשי מהשוליים העליונים של הדף*/
+    padding-right: 170px; /*המרחק של הכתב מצידה הימני של המסגרת*/
+}
+
+header nav ul li {
+    display: inline-block; /*הקישורים זה לצד זה*/ /*החלק הזה קובע את מבנה התפריט*/
+    float: right; /*הקישורים צמודים זה לזה*/
+}
+
+header nav ul li a { /*עיצוב פרטי התפריט*/
+    display: block; /*גורם ללשוניות לא להיות אחת על השנייה*/
+    background-color: white; /*רקע המסגרת של תפריט הניווט הראשי*/
+    color: black; /*צבע*/
+    width: 120px;
+    height: 30px;
+    padding-top: 13px; /*מרחק מהשוליים של המסגרת*/
+    text-decoration: none; /*קו תחתון לבן*/
+    text-align: center; /*מרכוז*/
+    font-family: 'Rubik-Light';
+}
+
+
+header nav ul li a:hover { /*כאשר המשתמש מעביר עכבר על הקטגוריות בתפריט הראשי*/
+    border-bottom: 3px solid black; /*קו תחתון של המרובע*/
+    padding-bottom: 1px; /*המרחק של הקו מהמסגרת*/
+    font-weight: bold; /*מבליט את המילה*/
+}
+
+.cover_img {
+    background-image: url('../Images/cover_img.jpg');
+    height: 655px;
+    width: 1280px;
+    padding-top: 64px;
+    background-repeat: no-repeat;
+    background-size: cover; /*/*הפקודה אומרת שהתמונה תמלא את כל הרקע המוגדר בגודלו הטבעי , הצגה של 100% ללא מתיחה*/
+    background-position: 50% 40px;
+}
+
+
+.arrow {                                           /*חץ בואו נתחיל*/ 
+    position: absolute;
+    width: 50px;
+    padding-top: 280px;
+    padding-right: 610px;
+}
+
+
+
+h1 {
+    font-family: Rubik-Medium; /*פונט לכותרת*/
+    color: black; /*צבע הפונט*/
+    padding-top: 120px; /*המרחק של הטקסט מלמעלה*/
+    padding-right: 60px; /*המרחק של הכותרת מהצד הימני של הדף*/
+    font-size: 55px; /*גודל הפונט*/
+}
+
+#B_h1{
+    font-family: Rubik-Black;                 /*הדגשה למילה בטוחה בכותרת הראשית*/
+    font-size: 62px;                           /*גודל הכתב*/     
+}
+.p_header {                                       /*הגדרה קבוע לפסקאות*/
+    padding-right: 60px; /*מרחק קבוע*/
+    font-family: Rubik-Light; /*סוג פונט*/
+    font-size: 24px;
+    color: black; /*צבע פונט*/
+    padding-top: 20px;
+}
+
+.p_header_first { /*הגדרה קבוע לפסקאות*/
+    padding-right: 60px; /*מרחק קבוע*/
+    font-family: Rubik-Light; /*סוג פונט*/
+    font-size: 24px;
+    color: black; /*צבע פונט*/
+    padding-top: 35px;
+}
+
+.height_section { /*אורך של כל סקשן*/
+    height: 600px;
+}
+
+h2 { /*כותרת רמה 2 עיצוב גורף*/
+    color: black;
+    padding-right: 60px;
+    padding-top: 20px;
+    font-family: Rubik-Light;
+    font-size: 46px;
+}
+/*-------------------- גדלים לאיקונים של הסקשן השני-------------*/
+
+#img_fish{
+    height:120px;
+    width:160px;
+}
+
+#img_milk {
+    height: 110px;
+    width: 90px;
+}
+#img_egg {
+    height: 100px;
+    width: 120px;
+}
+#img_soy {
+    height: 110px;
+    width: 150px;
+}
+#img_sesame {
+    height: 100px;
+    width: 150px;
+}
+#img_wheat {
+    height: 120px;
+    width: 150px;
+}
+#img_peanuts {
+    height: 100px;
+    width: 120px;
+}
+#img_nut{
+    height: 90px;
+    width: 120px;
+}
+
+/*סידור הקישורים של העובדות*/
+
+div#facts ul {
+    list-style: none;            /*ביטול של התבליטים*/
+    display: flex;             /*כל הילדים של יו-אל יהיו אחד ליד השני*/
+    height: 200px;                
+    padding-top: 20px;
+    align-items: center;                       /*ממרכז למרכז*/
+}
+
+    div#facts ul li{                         /*גורם לאובייקטים להיות אחד ליד השני*/
+        display:inline-block;
+    }
+
+        div#facts ul li a {
+            display: flex; /*גורם לכך שכל הילדים של הרשימה יהיו אחד ליד השני*/
+            flex-direction: column; /*גורם לאובייקטים בתוך הקישור להיות אחד מתחת לשני*/
+            justify-content: space-between; /*רווח בין 2 אלמנטים שנמצאים בתוך הקישור*/
+            align-items: center; /*מרכז את האלמנטים בתוך הקישור למרכז*/
+            border: 2px solid transparent; /*מסגרת בלתי נראת לאובייקט שתגרום לכך שלא תהיה תזוזה באבר*/
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            width: 150px;
+            height: 150px;
+        }
+   
+
+div#facts ul li a:hover {                                       /*מה קורה ברגע שעוברים עם העכבר על אחד האלרגנים*/
+ border: 2px solid #084866;                                       /*מסגרת מסביב לאובייקט*/
+ font-weight: bold;                                                  /*הבלטת הכתב*/
+ }
+
+
+.allergen_fact_circle { /*עובדת אלרגן עיגול*/
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin-top: -495px;
+    margin-right: 730px
+}
+
+#img_soy_fact {                         /*תמונת סויה מוגדלת בסקשן עובדות על אלרגנים*/
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-right: 989px;
+    margin-top: -205px;
+}
+
+#img_egg_fact { /*תמונת ביצים מוגדלת בסקשן עובדות על אלרגנים*/
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    margin-right: 969px;
+    margin-top: -230px;
+}
+
+
+#img_fish_fact { /*תמונת דגים  מוגדלת בסקשן עובדות על אלרגנים*/
+    position: absolute;
+    width: 320px;
+    height: 250px;
+    margin-right: 939px;
+    margin-top: -280px;
+}
+
+
+#img_wheat_fact { /*תמונת חיטה  מוגדלת בסקשן עובדות על אלרגנים*/
+    position: absolute;
+    width: 310px;
+    height: 210px;
+    margin-right: 989px;
+    margin-top: -245px;
+}
+
+/*הגדרה לטקסט של סויה בעובדות עמוד הבית*/
+
+.text_soy_fact {
+    position: absolute;
+    width: 275px;
+    color: white;
+    font-size: 26px;
+    font-style: italic;
+    margin-right: 810px;
+    margin-top: -365px;
+}
+
+/*הגדרה לטקסט של חיטה בעובדות עמוד הבית*/
+
+.text_wheat_fact {
+    position: absolute;
+    width: 275px;
+    color: white;
+    font-size: 26px;
+    font-style: italic;
+    margin-right: 840px;
+    margin-top: -355px;
+}
+
+/*הגדרה לטקסט של ביצים בעובדות עמוד הבית*/
+.text_egg_fact {
+    position: absolute;
+    width: 275px;
+    color: white;
+    font-size: 26px;
+    font-style: italic;
+    margin-right: 840px;
+    margin-top: -355px;
+}
+
+/*הגדרה לטקסט של דגים בעובדות עמוד הבית*/
+.text_fish_fact {
+    position: absolute;
+    width: 275px;
+    color: white;
+    font-size: 26px;
+    font-style: italic;
+    margin-right: 840px;
+    margin-top: -355px;
+}
+.font_to_text_fact {            /*פונט לטקסט בתוך העובדה המעניינית בדף הבית*/
+    font-family: Rubik-Light;
+}
+
+.font_to_text_Allergens { /*פונט לקישורים של האלרגנים*/
+    font-family: Rubik-medium;
+    font-size: 18px;
+}
+
+
+.Location_header_button_allergens {                  /*מיקום הכפתור של האלרגנים בדף הראשי ששיך לעובדות*/
+    padding-right: 840px;
+    margin-top: -95px;
+}
+/*------------------------- כפתור סויה בעמוד הראשי------------*/
+
+.header_button_allergens_1 { /*כפתור לעמוד של האלרגנים -- סויה אינדקס 1*/
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 29px;
+    height: 30px;
+    width: 190px;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    color: white;
+    font-family: Rubik-Medium;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+    .header_button_allergens_1:hover {
+        background: white;
+        color: black;
+    }
+/*------------------------- כפתור חיטה בעמוד הראשי------------*/
+
+.header_button_allergens_2 { /*כפתור לעמוד של האלרגנים -- חיטהה אינדקס 1*/
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 29px;
+    height: 30px;
+    width: 190px;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    color: white;
+    font-family: Rubik-Medium;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+    .header_button_allergens_2:hover {
+        background: white;
+        color: black;
+    }
+
+/*------------------------- כפתור ביצים בעמוד הראשי------------*/
+.header_button_allergens_3 { /*כפתור לעמוד של האלרגנים -- ביצה אינדקס 1*/
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 29px;
+    height: 30px;
+    width: 190px;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    color: white;
+    font-family: Rubik-Medium;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+    .header_button_allergens_3:hover {
+        background: white;
+        color: black;
+    }
+
+/*------------------------- כפתור דגים בעמוד הראשי------------*/
+.header_button_allergens_4 { /*כפתור לעמוד של האלרגנים -- ביצה אינדקס 1*/
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 29px;
+    height: 30px;
+    width: 190px;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    color: white;
+    font-family: Rubik-Medium;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+    .header_button_allergens_4:hover {
+        background: white;
+        color: black;
+    }
+
+    /*----------------------- סקשן 3 ----------------------*/
+    .Fixed_h3 { /*מיקום כותרות במה אתם חושבים עלינו*/
+        padding-right: 190px;
+        padding-top: 20px;
+        color: black; /*צבע הפונט*/
+        font-size: 20px;
+        font-family: Rubik;
+    }
+
+.Fixed_p_S2 { /*מיקום הפסקאות של הדעות של האנשים על האתר*/
+    padding-right: 190px;
+    padding-top: 10px;
+    color: black; /*צבע הפונט*/
+    font-size: 16px;
+    font-family: Rubik;
+    width: 400px;
+}
+
+.img_people {                                     /*התמונות של האנשים בסקשן של ההמלצות*/
+    height: 115px;
+    width: 115px;
+    float: right;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+
+.bold_sentence_feedback{
+    font-weight:bold;
+    font-family:Rubik;
+}
+
+
+
+#B_P{
+font-family:Rubik;                                                     /*בולד על המילה ביחד בסקשן של מה חשבתם עלינו*/
+}
+
+
+.cover_img_two {                                                         /*תמונה של הילדים בססקשן השלישי*/
+    background-image: url('../Images/5Kids.jpg');
+    height: 600px;
+    width: 640px;
+    float: left;
+    margin-top: -110px;
+    background-repeat: no-repeat;
+    background-size: cover /*/*הפקודה אומרת שהתמונה תמלא את כל הרקע המוגדר בגודלו הטבעי , הצגה של 100% ללא מתיחה*/
+}
+
+
+
+
+
+.color_background { /*מגדיר צבע רקע אפור*/
+    background-color: #edeef0;
+}
+
+/*------------------ סקשן 4---------------------*/
+
+#h2_middle {                         /*מרכוז הכותרת של הסקשן האחרון*/
+    padding-right: 350px;
+}
+
+.img_suggestion {                   /*תמונות -הצעות-גדלים*/
+    height: 450px;
+    width: 300px;
+}
+
+#cards {                          /*מיקום הכרטיסיות של הצעות*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 340px;
+    margin-top: 40px;
+}
+
+.paragraph_cards_location {                           /*מיקום פסקה בתוך כרטיסיות*/
+    position: absolute;
+    margin-top: -170px;
+    text-align: right;
+    margin-right: 40px;
+    width: 210px;
+}
+
+.h3_cards {                                                     /*הגדרה לכותרות*/
+    font-family: Rubik-Black;
+    color: black;
+    font-size:25px;
+}
+
+.paragraph_cards {                                  /*עיצוב הפסקאות בתוך הכרטיסיות*/
+    font-family: Rubik-Light;
+    color: black;
+    font-size:17px;
+    padding-top:10px
+    
+}
+
+.cards_Link_design {                         /*עיצוב של הקישורים בכרטיסיות של עוד כמה דברים להציע לכם*/
+    text-decoration:none;
+    padding-top:20px;
+    font-family:Rubik-Light;
+    color:black;
+}
+
+
+
+
+.up-btn { /*חץ חזרה למעלה תמידי*/
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+}
+
+.size_up_btn {                  /*הגודל של האובייקט חזרה למעלה*/
+    width: 50px;
+    height: 50px;
+}
+
+
+/*הנפשות לכרטיסיות*/
+
+.slide-top_1:hover {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-30px);
+    }
+}
+
+/*------------footer-----------------------------------------------------------------------------------------------*/
+footer {
+    background-color: black; /*רקע וגודל של הפוטר*/
+    height: 90px;
+}
+
+footer ul {
+    list-style: none; /*העלמת התבליטים במפת אתר */
+    display: inline-block;    /*חיבור כל התפריטים בצורה אופקית*/
+    float: right;            /*מצמיד את כל התפריטים*/
+ 
+}
+
+footer nav ul li {
+    display:block;       /*הלשוניות אחד מתחת לשני*/
+}
+
+    footer nav ul li a { /*עיצוב פרטי התפריט*/
+        display: block; /*גורם ללשוניות לא להיות אחת על השנייה*/
+        background-color: black; /*רקע המסגרת של תפריט הניווט הראשי*/
+        color: white; /*צבע*/
+        width: 100px;
+        height: 13px;
+        padding-top: 13px; /*מרחק מהשוליים של המסגרת*/
+        text-decoration: none; /*קו תחתון לבן*/
+        text-align: right; /*מרכוז*/
+        font-family: 'Rubik-Light';
+        font-size: 16px;
+    }
+
+#nav2 {
+    margin: 0 auto; /*תפריט של אודות צור קשר וקרדיט בפוטר- מיקום התפריט*/
+}
+
+
+footer ul#nav2 {
+    list-style: none; /*העלמה שלל התבליטים*/
+   
+}
+
+    footer nav#nav2 ul li {
+        display: inline-block;                  /*אחד ליד השני*/       /*החלק הזה קובע את מבנה התפריט*/
+        float:right;                                  /*צמודים*/
+    }
+
+    footer nav#nav2 ul li a {                              /*עיצוב פרטי התפריט*/
+        display: block;                                    /*גורם ללשוניות לא להיות אחת על השנייה*/
+        background-color: black;                         /*רקע המסגרת של תפריט  */
+        color: white;                                      /*צבע*/
+        width: 70px;
+        height: 13px;
+        padding-top: 13px;                                 /*מרחק מהשוליים של המסגרת*/
+        text-decoration: none;                              /*קו תחתון ריק*/
+        text-align: center;                                /*מרכוז*/
+        font-family: 'Rubik-Light';
+        font-size: 16px;
+    }
+
+ .p_footer {                              /*אחראי על הפסקה בפוטר של הזכויות*/
+    padding-right: 36%;                                 
+    font-family: Rubik-Light;
+    font-size: 16px;
+    color: white;
+    padding-top: 62px;
+}
+
+.p_network {                                       /*חפשו אותנו ברשתות חברתיות*/
+    font-family: Rubik-Light;                            /*סוג פונט*/
+    font-size: 16px;
+    color: white;                                           /*צבע פונט*/
+    padding-right:1000px;                                          /*מרחק הכתב מימין*/
+    margin-top:-65px;
+}
+.social_size {               /*גודל של אייקונים פייס טויטר אינסטגאם ויוטיוב*/
+    height: 50px;
+    width: 50px;
+}
+.social_Location {                               /*מיקום של האייקונים מתחת לחפשו אותנו גם ברשתות חברתיות*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right:652px;
+    padding-top: 1px;
+}
+
+.nav_2 {
+    margin-right: 50px;
+    margin-left: -50px;
+}
+/*--------------------------הפעלות לילדים------------------------------------*/
+.size_section_game{
+   height:720px;
+}
+
+.H1_content_page { /*הגדרה לכותרת הראשית בעמודי תוכן */
+    font-family: Rubik-Black; /*פונט הכותרת*/
+    text-align: center; /*מרכוז כותרת*/
+    font-size: 40px; /*גודל כותרת*/
+    padding-top: 75px; /*המרחק של הכותרת מקצה העליון*/
+}
+
+
+#short_p_game {                           /*הגדרה לפסקה  מתחת לכותרת בהפעלות לילדים*/
+    font-family: Rubik-Light;            /*סוג פונט*/
+    font-size: 20px;
+    color: black;                     /*צבע פונט*/
+    padding-top: 10px;       
+    padding-right: 415px;              /*מרחק מימין*/
+    padding-bottom: 6px;               /*מרחק הטקסט מהלמטה של הדף*/
+}
+
+
+
+.h2_Content_page { /* כותרות משניות בעמוד תוכן משחקים*/
+    font-family: Rubik-Light;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    border-width: 6px;
+    width: 100px;
+}
+
+.H2_underline {       /*המרחק של הכותרות מהשוליים של הדף*/
+ margin-right:560px;
+}
+
+nav ol {
+    padding-top: 3px;
+}
+
+nav ol li{                                /*פירורי לחם */
+    display:inline-block;                 /*תפריט אופקי*/
+}
+
+    nav ol li a{
+        color:blue;
+    }
+    nav ol li:after { /*לאחר כל פריט ברשימה יהיה הסימן של החץ*/
+        content: ">";
+        padding: 0 8px 0 2px;
+        background: transparent;
+    }
+
+    nav ol li:last-child:after{              /*הילד האחרון לא יקבל את הסימן*/
+        content:"";
+    }
+
+   
+
+.Photo_next_H2 {          /*מיקום של האייקונים פאזלים ותשבצים ליד הכותרות*/
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    padding-right: 570px;
+    margin-top: -59px;
+}
+
+.Photo_next_H2_light {           /*מיקום האייקון של המנורה ליד הכותרת*/
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    padding-right: 580px;
+    margin-top: -59px;
+}
+
+.Photo_next_H2_magnifire {                /*מיקום האייקון של הזכוכית מגדלת  ליד הכותרת*/
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    padding-right: 590px;
+    margin-top: -59px;
+}
+
+
+
+    .Control_games {               /*תפריט קבע בעמוד של משחקים*/
+        position: fixed;
+        bottom: 10px;
+        left: 125px;
+    }
+
+.Games_size_shadow {                /*גודל והנפשה קבועה עבור כל המשחקים*/
+    width: 280px;
+    height: 164px;
+    -webkit-box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.75); /*הנפשה*/
+    -moz-box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.75); /*הנפשה*/
+    box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.75); /*הנפשה*/
+    transition: transform .2s; /*אנימציה*/
+}
+
+    .Games_size_shadow:hover {
+        transform: scale(1.4);      /*אנימציה*/
+    }
+
+
+    .Games_grid { /*מרווחים בין כל המשחקים בעמוד הפעלות*/
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        grid-row-gap: 80px;
+        padding-top: 60px;
+        justify-items: center;
+    }
+
+.h3_name_of_game {                                          /*כותרות למשחקים הגדרה גלובלית*/
+    font-family: Rubik;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    border-width: 3px;
+}
+
+.Paragraph_guidelines {                /*הוראה להעביר את העכבר מעל המשחקים להגדלה*/
+    font-family: Rubik-Light;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
+}
+/*----- כפתור להורדה------*/
+.Search-button {
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: Rubik;
+    font-size: 13px;
+    border-radius: 13px;
+    background: #06105F;
+    margin-top: 10px;
+}
+
+    .Search-button:hover {
+        background:black;
+    }
+
+    .Search-button:active{
+        position: relative;
+        top: 1px;
+    }
+
+.Search-button-text {
+    padding: 4px 8px;
+    float: left;
+}
+
+.Search-button-icon {
+    border-right: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
+    border-radius: 13px 0 0 13px;
+    padding: 4px 10px;
+    float: left;
+}
+
+/*----מיקום הכפתור-----*/
+
+.button_location {
+    padding-top: 4px;
+    padding-right: 100px
+}
+
+
+/*----   עוגנים במשחקים - גריד לתפקיד משני----*/
+.icon_game_grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(8,2fr);
+    width: 600px;
+    text-align: center;
+    padding-right: 449px;
+    padding-bottom: 50px;
+    padding-top: 13px;
+}
+
+.size_Secondary_1{              /*גודל של אייקונים בתפריט משני חוץ מזיהוי*/
+width:80px;
+}
+
+
+#size_Secondary_2 {                /*גודל של אייקון זיהוי בתפריט משני*/
+    width: 90px;
+    margin-top: -9px;
+}
+
+.icon_game_font_1 {                   /*פונט לשמות של האייקונים*/
+    font-family: Rubik;
+    color: black;
+}
+
+ul.icon_game_grid li a{         /*להוריד את הקו מהכתב בעוגנים*/
+    text-decoration:none;
+}
+
+.icon_game_font_1:hover {
+    color: #2E6104;
+    font-size: 16px;
+    font-family: Rubik-Medium;
+}
+
+#Guided_paragraph_game {                      /*פונט של הכותרת הנעה לפעולה מעל האייקונים באתר*/
+    font-family: Rubik-black;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    padding-right: 60px;
+}
+/*-------------אלרגנים-----------------------*/
+.Height_section_allergens { /*גודל סקשנים בדף אלרגנים*/
+    height: 400px;
+}
+
+.hr_width {                      /*קו למתחת לאלרגנים האייקונים*/
+    width: 585px;
+    height: 0px;
+    border: 1px solid black;
+    margin-right:55px;
+    margin-top:12px;
+
+}
+
+    #Height_section_allergens_first11 {
+        height: 500px;
+    }
+
+#short_p_Allergens { /*הגדרה לפסקה  מתחת לכותרת באלרגנים*/
+    font-family: Rubik-Light; /*סוג פונט*/
+    font-size: 20px;
+    color: black; /*צבע פונט*/
+    padding-top: 10px;
+    padding-right: 510px; /*מרחק מימין*/
+    padding-bottom: 6px; /*מרחק הטקסט מהלמטה של הדף*/
+}
+
+.First_paragraph_page { /*פסקת פתיחה בעמוד אלרגנים*/
+    padding-right: 60px; /*מרחק קבוע*/
+    font-family: Rubik; /*סוג פונט*/
+    font-size: 22px;
+    color: black; /*צבע פונט*/
+    padding-top: 20px;
+    width: 530px;
+    line-height: 32px;
+}
+
+#two_paragraph_allergens {                        /*קריאה לפעולה ללחיצה על האייקונים של האלרגנים*/
+    padding-right: 60px; /*מרחק קבוע*/
+    font-family: Rubik-black; /*סוג פונט*/
+    font-size: 22px;
+    color: black; /*צבע פונט*/
+    padding-top: 20px;
+    width: 550px;
+}
+
+
+.img_cover_allergens { /*תמונת אווירה בעמוד אלרגנים*/
+    background-image: url('../Images/Ellergan.jpg');
+    width: 400px;
+    height: 400px;
+    margin-top: -338px;
+    padding-right: 776px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.Paragraph_size_background { /*רקע שחור וגודל לפסקאות הסקשנים*/
+    background-color: black;
+    height: 300px;
+}
+
+.img_allergens_size {                            /*גודל קבוע לתמונות בעמוד אלרגינם*/
+    width: 300px;
+    height: 300px;
+}
+
+.h3_allergens {                               /*כותרות גודל ומיקום קבוע*/
+    font-family: Rubik-Black;
+    font-size: 35px;
+    color: white; /*צבע*/
+    padding-top: 6px;
+    margin-top: -300px;
+    margin-right: 350px;
+}
+
+.Paragraph_allergens {                 /*פסקאות מידע גודל ומיקום קבוע וקו תחתון מפריד */
+    color: white; /*צבע*/
+    font-family: Rubik-Light;
+    font-size: 20px;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    border-width: 1px;
+    margin-right: 350px;
+    padding-top: 10px;
+    width:800px;
+}
+
+.grid_allergens {                                       /*גריד שמיועד לעשות הפרדה בין הכותרות לבין המלל בכל פסקת תוכן*/ 
+    display: grid;
+    grid-template-columns: 2fr 12fr;
+    grid-gap: 18px;
+    padding-right: 350px;
+    padding-top: 30px;
+}
+
+.h4_allergens {                          /*כל הכותרות בדף ברמה 4*/
+    font-family: Rubik-Medium;
+    font-size: 18px;
+    color: white; /*צבע*/
+}
+
+
+.h4_allergens_2 {              /*כותרת למידע נוסף על האלרגן מתחת לכל סקשן*/
+    font-family: Rubik-Medium;
+    font-size: 18px;
+    color: black; /*צבע*/
+}
+
+.h4_hig{                      /*גובה הכותרות של רמה 4*/
+    padding-top:12px;
+}
+
+.Paragraph_information {                        /*כל המלל בתוך כל פסקת תוכן*/ 
+    font-family: Rubik-Light;
+    font-family: 18px;
+    color: white;              /*צבע*/
+}
+
+.buttons_grid { /*מיקום הכפתורים מתחת לכל אלרגן*/
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 18px;
+    padding-right: 350px;
+    padding-top: 60px;
+}
+   
+/*כפתורים*/
+
+.Allergy_button { /*כפתור לעמוד של האלרגנים*/
+    border: 1px solid #06105F;
+    border-radius: 29px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    background: #06105F;
+    color: #ffffff;
+    font-family: Rubik-light;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+    .Allergy_button:hover {
+        background: black;
+    }
+
+/*-------------------- אולי יעניין אותך גם--------------*/
+.Offers_end_page { /*בסוף כל עמוד תוכן הצעות נוספות*/
+    height: 330px;
+    background-color: black;
+    border:0.5px solid white;
+}
+
+
+
+
+.tizer_size{                /*גודל התמונות של הטיזרים*/
+    width:250px;
+    height:240px;
+}
+
+.tizer_location {                    /*מיקום הטיזרים בתחתית הדף*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 150px;
+    margin-top:-30px;
+}
+
+
+.p_tizer { /*הפסקה מתחת לתמונת הטיזר*/
+    font-family: Rubik-Light;
+    font-size: 16px;
+    color: white;
+    width: 150px;
+    padding-right: 50px;
+    margin-top: -10px;
+}
+
+.p_tizer_link {               /*תכונות של הקישור בטיזר*/
+    font-family: Rubik-Light;
+    font-size: 14px;
+    color: white;
+    padding-right: 50px;
+}
+
+.h3_tizer {                                   /*הכותרת של סקשן הטיזר*/
+    font-family: Rubik-Light;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+
+
+/*------- עוגנים לדף אלרגנים------*/
+
+
+#img_Secondaryallergens_wheat { /*גודל לכל אייקון בנפרד*/
+    width: 30px;
+}
+
+#img_Secondaryallergens_soy {
+    width: 44px;
+    padding-top: 8px;
+}
+
+#img_Secondaryallergens_sesame {
+    width: 40px;
+    padding-top: 8.5px;
+}
+
+#img_Secondaryallergens_fish {
+    width: 50px;
+    padding-top: 22.5px;
+}
+
+#img_Secondaryallergens_peanut {
+    width: 40px;
+    padding-top: 7.5px;
+}
+
+#img_Secondaryallergens_milk {
+    width: 25px;
+    padding-top: 8px;
+}
+
+#img_Secondaryallergens_nuts {
+    width: 45px;
+    padding-top: 10.5px;
+}
+
+#img_Secondaryallergens_egg {
+    width: 30px;
+    padding-top: 12px;
+}
+
+
+/*גריד לרשימת העוגנים*/
+
+.Secondaryallergens {                /*הגדרה של גריד לרשימה*/
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(8,2fr);
+    width: 644px;
+    padding-right: 48px;
+    text-align: center;
+    margin-top: -40px;
+}
+
+
+/*פונט לעוגנים*/
+.icon_allergens_font {                /*פונט לשמות של האייקונים*/
+    font-family: Rubik-Light;
+    color: black;
+}
+
+ul.Secondaryallergens li a { /*מעלים את הקו מתחת לשמות האלרגנים*/
+    text-decoration: none;
+}
+
+.icon_allergens_font:hover { /*גודל הכתר והצבע של הכתב משתנים כשעומדים על האיקונים*/
+    color: #2E6104;
+    font-family: Rubik-Medium;
+}
+
+
+
+
+ 
+.anchor {                                                      /*טיפול לעוגנים שיביאו את המשתמש בדיוק למקום הנכון*/ 
+    display: block;
+    height: 80px; /*same height as header*/
+    margin-top: -80px; /*same height as header*/
+    visibility: hidden;
+}
+
+
+/*------------------------צור קשר-----------------*/
+
+
+.section_one_size {
+    height: 950px;
+    padding-right: 30px;
+}
+
+.short_p_contactus { /*הגדרה לפסקה מתחת לצור קשר*/
+    font-family: Rubik-Light; /*סוג פונט*/
+    font-size: 20px;
+    color: black; /*צבע פונט*/
+    padding-top: 10px;
+    padding-right: 578px; /*מרחק מימין*/
+    padding-bottom: 6px; /*מרחק הטקסט מהלמטה של הדף*/
+}
+
+.font_form { /*פונט של הפלייסאולדר*/
+    font-family: Rubik-Light;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.font_form_bold { /*כותרות של הטופס*/
+    font-family: Rubik-Medium;
+    font-size: 20px;
+    color: black;
+    padding-top: 20px;
+}
+
+
+.cover_contactus { /*תמונת רקע בצור קשר*/
+    background-image: url('../Images/girl_talk_on_the_phone.jpg');
+    width: 1250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fix_textarea { /*שהתיבת טקסט לא תזוז*/
+    width: 500px;
+    resize: none;
+}
+
+
+.spacing_row { /*נועד לרווח בין הפקדים*/
+    display: flex;
+    flex-direction: column;
+}
+
+.spacing_ {                 /*ריווח לכפתור שליחה*/
+    padding-right: 220px;
+    padding-top: 15px;
+    font-family: Rubik-Medium;
+}
+/*----------------------------- אודות------------------------*/
+.short_p_About { /*הגדרה לפסקה תחת אודות*/
+    font-family: Rubik-Light; /*סוג פונט*/
+    font-size: 20px;
+    color: black; /*צבע פונט*/
+    padding-top: 10px;
+    padding-right: 610px; /*מרחק מימין*/
+    padding-bottom: 6px; /*מרחק הטקסט מהלמטה של הדף*/
+}
+
+.openning_p {             /*פסקאות פתיחה בדרך אודות*/
+    font-family: Rubik;
+    color: black;
+    width: 1200px;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-right: 20px;
+    clear: both;
+    font-size: 26px;
+}
+
+.img_our_profile {                /*תמונות שלנו + סידור*/
+    height: 300px;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 6fr 6fr 6fr;
+    text-align: center;
+    width: 900px;
+    padding-right: 150px;
+}
+
+
+.img_our_profile_size {             /*גודל התמונות שלנו*/
+    width: 190px;
+}
+
+.li_design_about { /*תמונה של הבולטים באודות*/
+    list-style: disc;
+    color: black;
+}
+
+
+.font_to_name {        /*פונט לשמות*/
+    color: black;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: Rubik-Light;
+}
+
+.fonttobulletli {                            /*פונט לרשימה הראשונה בעמוד אודות*/
+    font-family: Rubik-Light;
+    font-size: 22px;
+    color: black;
+}
+
+
+nav#pageopen ul li a {            /*רשימת דפים שפותחו הגדרות לקישורים*/
+    font-family: Rubik-Light;
+    font-size: 22px;
+    color: blue;
+}
+
+
+.linktohit { /*לינק למכון HIT*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    color: blue;
+    font-family: Rubik-Light;
+    padding-top: 50px;
+}
+
+
+.spacetologo{          /*הרווח של הלוגו מהקישור הבודד*/
+    padding:20px;
+}
+
+/*/*---------------בועית עולה בתווית של הפוטר------------------*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-top: 12px;
+    margin-right: 16px;
+    font-family: Rubik-Light;
+    font-size: 16px;
+    color: white;
+    width: 400px;
+}
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 480px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -70px;
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+        /* Tooltip arrow */
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+.tooltiptext .tooltip-content {
+    background-color: #555 !important;
+    color: white !important;
+    width: auto !important;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 4px;
+    text-align: left;
+}
+/*-----------------/*כפתור הנגשה*/ /**--------------*/
+
+#skip {                                             /*הגדרה של מעטפת עם גודל מסוים לדילוג תוכן*/
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 
+    #skip a {                                                     /*על מנת שלא ייראו את הכפתור*/
+        position: absolute;
+        left: -9999px;
+        top: 30px;
+    }
+
+
+        #skip a:focus, #skip a:active {                   
+            position: relative;
+            right: 0;
+            z-index: 9999;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            padding: 15px 50px;
+            font-size: 16pt;
+            text-align: center;
+            text-decoration: none;
+            color: #0f2233;
+            background-color: rgba(255,255,255,0.9);
+            -webkit-box-shadow: 0 0 4px 1px rgba(0,0,0,0.1);
+            box-shadow: 0 0 4px 1px rgba(0,0,0,0.1);
+            outline: 3px solid green;
+        }

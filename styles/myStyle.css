@@ -1348,7 +1348,6 @@ nav#pageopen ul li a {            /*רשימת דפים שפותחו הגדרו�
         position: absolute;
         left: -9999px;
         top: 30px;
-       
     }
 
 
@@ -1368,5 +1367,4 @@ nav#pageopen ul li a {            /*רשימת דפים שפותחו הגדרו�
             -webkit-box-shadow: 0 0 4px 1px rgba(0,0,0,0.1);
             box-shadow: 0 0 4px 1px rgba(0,0,0,0.1);
             outline: 3px solid green;
-           
         }

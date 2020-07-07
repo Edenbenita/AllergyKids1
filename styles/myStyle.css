@@ -1100,7 +1100,7 @@ ul.icon_game_grid li a{         /*להוריד את הקו מהכתב בעוגנ
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(8,2fr);
-    width: 600px;
+    width: 644px;
     padding-right: 48px;
     text-align: center;
     margin-top: -40px;

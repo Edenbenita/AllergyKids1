@@ -866,6 +866,10 @@ ul.icon_game_grid li a{         /*להוריד את הקו מהכתב בעוגנ
     padding-top: 20px;
     padding-right: 60px;
 }
+
+.br_a_tizer{                     /המרחק של הקישור מהטיזר בדף הפנימי/
+    margin-top:18px;
+}
 /*-------------אלרגנים-----------------------*/
 .Height_section_allergens { /*גודל סקשנים בדף אלרגנים*/
     height: 400px;

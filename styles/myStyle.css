@@ -1012,6 +1012,7 @@ ul.icon_game_grid li a{         /*להוריד את הקו מהכתב בעוגנ
 .Offers_end_page { /*בסוף כל עמוד תוכן הצעות נוספות*/
     height: 330px;
     background-color: #edeef0;
+    margin-top:80px;
 }
 
 

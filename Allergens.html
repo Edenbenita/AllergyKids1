@@ -2,7 +2,7 @@
 <html lang="he">
 <head>
     <meta charset="utf-8" />
-    <title> אלרגנים ALLERGYKIDS</title>
+    <title> אלרגנים-ALLERGYKIDS</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 
     <link href="styles/reset.css" rel="stylesheet" />
-    <link href="styles/myStyle - Accessibility.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
     <link rel="icon" href="Images/favicon.jpg" />
     <!-- JS -->
     <script src="jScripts/jquery-1.12.0.min.js"></script>
@@ -28,23 +28,23 @@
 
         <header>
 
-            <nav>
+            <nav role="navigation" aria-label="ניווט מרכזי">
                 <div>
-                    <a href="index - Accessibility.html"><img id="Logo" alt="לוגו האתר אלרג'יקידס" src="Images/LOGO.png" /></a>
+                    <a href="index.html"><img id="Logo" alt="לוגו האתר אלרג'יקידס" src="Images/Logo.png" /></a>
                 </div>
 
                 <ul>
-                    <li><a alt="עמוד אלרגנים" href="Allergens - Accessibility.html">אלרגנים</a></li>
-                    <li><a alt="#" href="" class="notActive">מענה בחירום</a></li>
-                    <li><a href="#" class="notActive">כללי בטיחות</a></li>
-                    <li><a href="#" class="notActive">מתכונים</a></li>
-                    <li><a href="#" class="notActive">תחליפי מזון</a></li>
-                    <li><a href="Kidsgames - Accessibility.html">הפעלות לילדים</a></li>
-                    <li><a href="#" class="notActive">טפסים</a></li>
+                    <li><a alt="עמוד אלרגנים" href="Allergens.html">אלרגנים</a></li>
+                    <li><a href="" class="notActive">מענה בחירום</a></li>
+                    <li><a href="" class="notActive">כללי בטיחות</a></li>
+                    <li><a href="" class="notActive">מתכונים</a></li>
+                    <li><a href="" class="notActive">תחליפי מזון</a></li>
+                    <li><a href="Kidsgames.html">הפעלות לילדים</a></li>
+                    <li><a href="" class="notActive">טפסים</a></li>
                 </ul>
 
                 <div>
-                    <a href="Allergens.html">
+                    <a href="Allergens - Accessibility.html">
                         <img id="Accessibility_button" src="Images/Accessibility button.svg" title="נגישות" alt="כפתור נגישות" />
                     </a>
                 </div>
@@ -58,9 +58,10 @@
 
         <!---------------------------- תפריט עליון חלק קבוע ------------------------------------------>
         <!------------------------- תוכן הדף------------------>
-        <div role="main">
-            <a name="content"></a>
 
+        <div role="main">
+
+            <a name="content"></a>
 
             <section class="color_background">
                 <h1 class="H1_content_page">אלרגנים</h1>
@@ -215,7 +216,7 @@
 
 
                     <div class="buttons_grid">
-                        <h4 class="h4_allergens_2 h4_hig"> עוד בנושא חיטה:</h4>
+                        <h4 class="h4_allergens h4_hig"> עוד בנושא חיטה:</h4>
                         <a href="#" class="Allergy_button notActive">מתכונים ללא חיטה</a>
                         <a href="#" class="Allergy_button notActive">תחליפים לחיטה</a>
                     </div>
@@ -267,7 +268,7 @@
                     </div>
 
                     <div class="buttons_grid">
-                        <h4 class="h4_allergens_2 h4_hig"> עוד בנושא סויה:</h4>
+                        <h4 class="h4_allergens h4_hig"> עוד בנושא סויה:</h4>
                         <a href="#" class="Allergy_button notActive">מתכונים ללא סויה</a>
                         <a href="#" class="Allergy_button notActive">תחליפים לסויה</a>
                     </div>
@@ -319,7 +320,7 @@
                     </div>
 
                     <div class="buttons_grid">
-                        <h4 class="h4_allergens_2 h4_hig"> עוד בנושא שומשום:</h4>
+                        <h4 class="h4_allergens h4_hig"> עוד בנושא שומשום:</h4>
                         <a href="#" class="Allergy_button notActive">מתכונים ללא שומשום</a>
                         <a href="#" class="Allergy_button notActive">תחליפים לשומשום</a>
                     </div>
@@ -370,7 +371,7 @@
                     </div>
 
                     <div class="buttons_grid">
-                        <h4 class="h4_allergens_2 h4_hig"> עוד בנושא דגים:</h4>
+                        <h4 class="h4_allergens h4_hig"> עוד בנושא דגים:</h4>
                         <a href="#" class="Allergy_button notActive">מתכונים ללא דגים</a>
                         <a href="#" class="Allergy_button notActive">תחליפים לדגים</a>
                     </div>
@@ -421,7 +422,7 @@
                     </div>
 
                     <div class="buttons_grid">
-                        <h4 class="h4_allergens_2 h4_hig"> עוד בנושא בוטנים:</h4>
+                        <h4 class="h4_allergens h4_hig"> עוד בנושא בוטנים:</h4>
                         <a href="#" class="Allergy_button notActive">מתכונים ללא בוטנים</a>
                         <a href="#" class="Allergy_button notActive">תחליפים לבוטנים</a>
                     </div>
@@ -471,7 +472,7 @@
                     </div>
 
                     <div class="buttons_grid">
-                        <h4 class="h4_allergens_2 h4_hig"> עוד בנושא חלב:</h4>
+                        <h4 class="h4_allergens h4_hig"> עוד בנושא חלב:</h4>
                         <a href="#" class="Allergy_button notActive">מתכונים ללא חלב</a>
                         <a href="#" class="Allergy_button notActive">תחליפים לחלב</a>
                     </div>
@@ -523,7 +524,7 @@
                     </div>
 
                     <div class="buttons_grid">
-                        <h4 class="h4_allergens_2 h4_hig"> עוד בנושא אגוזים:</h4>
+                        <h4 class="h4_allergens h4_hig"> עוד בנושא אגוזים:</h4>
                         <a href="#" class="Allergy_button notActive">מתכונים ללא אגוזים</a>
                         <a href="#" class="Allergy_button notActive">תחליפים לאגוזים</a>
                     </div>
@@ -575,56 +576,56 @@
                     </div>
 
                     <div class="buttons_grid">
-                        <h4 class="h4_allergens_2 h4_hig"> עוד בנושא ביצים:</h4>
+                        <h4 class="h4_allergens h4_hig"> עוד בנושא ביצים:</h4>
                         <a href="#" class="Allergy_button notActive">מתכונים ללא ביצים</a>
                         <a href="#" class="Allergy_button notActive">תחליפים לביצים</a>
                     </div>
                 </div>
             </section>
+
+
+            <section class="Offers_end_page">
+                <h3 class="h3_tizer"> כדאי להכיר גם:</h3>
+                <div class="tizer_location">
+                    <div>
+                        <img class="tizer_size" src="Images/Emergency_tizer.png" alt="רופאה בודקת בסטטוסקופ ילדה " />
+                        <p class="p_tizer">
+                            כיצד להגיב בשעת חירום בזמן התקף אלרגי
+                        </p>
+
+                        <br />
+                        <a href="#" class="notActive p_tizer_link">לצפייה במענה בחירום</a>
+                    </div>
+
+                    <div>
+                        <img class="tizer_size" src="Images/Games_tizer.png" alt="ילד וילדה קטנים מציירים " />
+                        <p class="p_tizer">
+                            מגוון משחקים להעלאת המודעות לאלרגנים
+                        </p>
+
+                        <br />
+                        <a href="Kidsgames.html" class="p_tizer_link">לצפייה בהפעלות לילדים</a>
+                    </div>
+
+                    <div>
+                        <img class="tizer_size" src="Images/Cupcakes_tizer.png" alt="קאפקייקס שוקולד וניל " />
+                        <p class="p_tizer">
+                            מגוון מתכונים מותאמים שכל ילד יאהב
+                        </p>
+
+                        <br />
+                        <a href="#" class="notActive p_tizer_link">לצפייה במתכונים</a>
+                    </div>
+                </div>
+            </section>
         </div>
-
-        <section class="Offers_end_page">
-            <h3 class="h3_tizer"> כדאי להכיר גם:</h3>
-            <div class="tizer_location">
-                <div>
-                    <img class="tizer_size" src="Images/Emergency_tizer.png" alt="רופאה בודקת בסטטוסקופ ילדה " />
-                    <p class="p_tizer">
-                        כיצד להגיב בשעת חירום בזמן התקף אלרגי
-                    </p>
-
-                    <br />
-                    <a href="#" class="notActive p_tizer_link">לצפייה במענה בחירום</a>
-                </div>
-
-                <div>
-                    <img class="tizer_size" src="Images/Games_tizer.png" alt="ילד וילדה קטנים מציירים " />
-                    <p class="p_tizer">
-                        מגוון משחקים להעלאת המודעות לאלרגנים
-                    </p>
-
-                    <br />
-                    <a href="Kidsgames - Accessibility.html" class="p_tizer_link">לצפייה בהפעלות לילדים</a>
-                </div>
-
-                <div>
-                    <img class="tizer_size" src="Images/Cupcakes_tizer.png" alt="קאפקייקס שוקולד וניל " />
-                    <p class="p_tizer">
-                        מגוון מתכונים מותאמים שכל ילד יאהב
-                    </p>
-
-                    <br />
-                    <a href="#" class="notActive p_tizer_link">לצפייה במתכונים</a>
-                </div>
-            </div>
-        </section>
-
         <!----------------------------------- סוף העמוד קבוע FOOTER--------------------------------->
         <footer>
 
 
             <nav>
                 <ul>
-                    <li><a href="Allergens - Accessibility.html">אלרגנים</a></li>
+                    <li><a href="Allergens.html">אלרגנים</a></li>
                     <li><a href="" class="notActive">מענה בחירום</a></li>
                     <li><a href="" class="notActive">כללי בטיחות</a></li>
                 </ul>
@@ -636,7 +637,7 @@
                 <ul>
                     <li><a href="" class="notActive">מתכונים</a></li>
                     <li><a href="" class="notActive">תחליפי מזון</a></li>
-                    <li><a href="Kidsgames - Accessibility.html">הפעלות לילדים</a></li>
+                    <li><a href="Kidsgames.html">הפעלות לילדים</a></li>
 
                 </ul>
             </nav>
@@ -653,8 +654,8 @@
 
             <nav id="nav2">
                 <ul class="nav_2">
-                    <li><a href="About - Accessibility.html">אודות </a></li>
-                    <li><a href="ContactUs - Accessibility.html">צור קשר </a></li>
+                    <li><a href="About.html">אודות </a></li>
+                    <li><a href="ContactUs.html">צור קשר </a></li>
                     <li>
                         <span class="tooltip">
                             <span class="tooltiptext">
@@ -704,7 +705,7 @@
             </div>
 
         </footer>
-        </footer>
+
 
     </div>
 </body>

@@ -453,8 +453,8 @@ font-family:Rubik;                                                     /*בול�
     background-size: cover /*/*הפקודה אומרת שהתמונה תמלא את כל הרקע המוגדר בגודלו הטבעי , הצגה של 100% ללא מתיחה*/
 }
 
-.br_for_img{                /מרחק בין התמונות בסקשן השלישי/
-    margin-top:48px;
+.br_for_img{                
+    margin-top:58px;
 }
 
 

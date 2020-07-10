@@ -16,6 +16,13 @@
     src: url('../Fonts/Rubik-Medium.ttf') format('truetype');
 }
 
+
+@font-face {
+    font-family: 'Rubik-Regular';
+    src: url('../Fonts/Rubik-Regular.eot') format('embedded-opentype');
+    src: url('../Fonts/Rubik-Regular.ttf') format('truetype');
+}
+
 body {
     direction: rtl;
 }

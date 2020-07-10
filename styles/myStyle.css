@@ -16,6 +16,7 @@
     src: url('../Fonts/Rubik-Medium.ttf') format('truetype');
 }
 
+
 @font-face {
     font-family: 'Rubik-Regular';
     src: url('../Fonts/Rubik-Regular.eot') format('embedded-opentype');
@@ -452,6 +453,9 @@ font-family:Rubik;                                                     /*בול�
     background-size: cover /*/*הפקודה אומרת שהתמונה תמלא את כל הרקע המוגדר בגודלו הטבעי , הצגה של 100% ללא מתיחה*/
 }
 
+.br_for_img{                /מרחק בין התמונות בסקשן השלישי/
+    margin-top:60px;
+}
 
 
 
@@ -521,11 +525,6 @@ font-family:Rubik;                                                     /*בול�
     width: 50px;
     height: 50px;
 }
-
-.card_br_sec4 {        /הרווח של הקישורים מהמלל/ 
-    margin-top: 45px;
-}
-
 
 
 /*הנפשות לכרטיסיות*/
@@ -874,6 +873,10 @@ ul.icon_game_grid li a{         /*להוריד את הקו מהכתב בעוגנ
     padding-top: 20px;
     padding-right: 60px;
 }
+
+.br_a_tizer{                     /המרחק של הקישור מהטיזר בדף הפנימי/
+    margin-top:18px;
+}
 /*-------------אלרגנים-----------------------*/
 .Height_section_allergens { /*גודל סקשנים בדף אלרגנים*/
     height: 400px;
@@ -1020,6 +1023,7 @@ ul.icon_game_grid li a{         /*להוריד את הקו מהכתב בעוגנ
 .Offers_end_page { /*בסוף כל עמוד תוכן הצעות נוספות*/
     height: 330px;
     background-color: #edeef0;
+    margin-top:80px;
 }
 
 
@@ -1111,7 +1115,7 @@ ul.icon_game_grid li a{         /*להוריד את הקו מהכתב בעוגנ
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(8,2fr);
-    width: 644px;
+    width: 600px;
     padding-right: 48px;
     text-align: center;
     margin-top: -40px;

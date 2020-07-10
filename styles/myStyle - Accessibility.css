@@ -451,7 +451,9 @@ font-family:Rubik;                                                     /*בול�
     background-size: cover /*/*הפקודה אומרת שהתמונה תמלא את כל הרקע המוגדר בגודלו הטבעי , הצגה של 100% ללא מתיחה*/
 }
 
-
+.br_for_img{                /מרחק בין התמונות בסקשן השלישי/
+    margin-top:60px;
+}
 
 
 
@@ -520,10 +522,6 @@ font-family:Rubik;                                                     /*בול�
 .size_up_btn {                  /*הגודל של האובייקט חזרה למעלה*/
     width: 50px;
     height: 50px;
-}
-
-.card_br_sec4 {        /הרווח של הקישורים מהמלל/ 
-    margin-top: 45px;
 }
 
 
@@ -871,6 +869,10 @@ ul.icon_game_grid li a{         /*להוריד את הקו מהכתב בעוגנ
     padding-top: 20px;
     padding-right: 60px;
 }
+
+.br_a_tizer{                     /המרחק של הקישור מהטיזר בדף הפנימי/
+    margin-top:18px;
+}
 /*-------------אלרגנים-----------------------*/
 .Height_section_allergens { /*גודל סקשנים בדף אלרגנים*/
     height: 400px;
@@ -1025,6 +1027,7 @@ ul.icon_game_grid li a{         /*להוריד את הקו מהכתב בעוגנ
     height: 330px;
     background-color: black;
     border:0.5px solid white;
+    margin-top:80px;
 }
 
 
@@ -1360,7 +1363,6 @@ nav#pageopen ul li a {            /*רשימת דפים שפותחו הגדרו�
         position: absolute;
         left: -9999px;
         top: 30px;
-       
     }
 
 
